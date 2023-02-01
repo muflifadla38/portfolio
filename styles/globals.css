@@ -3,8 +3,20 @@
 @tailwind utilities;
 
 /* CSS Custom */
-/* @layer components {
-  .list ul li {
-    @apply my-2;
+@layer components {
+  .scroll-section .section {
+    @apply w-full h-screen;
   }
-} */
+
+  .side-menu {
+    @apply flex flex-col flex-wrap top-48 right-5 fixed mx-4;
+  }
+
+  .menu-item {
+    @apply my-3 p-6 bg-slate-700 hover:bg-slate-400  rounded-full;
+  }
+
+  .menu-item.active {
+    @apply bg-indigo-700;
+  }
+}
