@@ -4,8 +4,8 @@
 
 /* CSS Custom */
 @layer components {
-  .scroll-section .section {
-    @apply w-full h-screen;
+  .scroll-section .scroll-item {
+    @apply w-full h-screen flex items-center justify-center;
   }
 
   .side-menu {
@@ -13,10 +13,10 @@
   }
 
   .menu-item {
-    @apply my-3 p-6 bg-slate-700 hover:bg-slate-400  rounded-full;
+    @apply my-3 p-6 bg-slate-400 hover:bg-slate-500 rounded-full shadow-xl duration-1000;
   }
 
   .menu-item.active {
-    @apply bg-indigo-700;
+    @apply bg-indigo-600 hover:bg-indigo-500 text-slate-200 shadow-indigo-300;
   }
 }

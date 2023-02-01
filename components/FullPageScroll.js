@@ -17,6 +17,9 @@ const FullPageScroll = ({ children, className }) => {
     <>
       <div className={"scroll-section w-full " + className}>{children}</div>
       <ul class="side-menu">
+        <li className="menu-item " data-page="#introduction">
+          <a></a>
+        </li>
         <li className="menu-item " data-page="#profile">
           <a></a>
         </li>
