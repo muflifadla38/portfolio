@@ -5,16 +5,16 @@ const Home = () => {
     <>
       <FullPageScroll className="bg-slate-100 text-slate-800">
         <div id="introduction" className="scroll-item">
-          <p class="text-center text-2xl font-bold">Intro</p>
+          <p className="text-center text-2xl font-bold">Intro</p>
         </div>
         <div id="profile" className="scroll-item">
-          <p class="text-center text-2xl font-bold">Profile</p>
+          <p className="text-center text-2xl font-bold">Profile</p>
         </div>
         <div id="education" className="scroll-item">
-          <p class="text-center text-2xl font-bold">Education</p>
+          <p className="text-center text-2xl font-bold">Education</p>
         </div>
         <div id="skills" className="scroll-item">
-          <p class="text-center text-2xl font-bold">Skills</p>
+          <p className="text-center text-2xl font-bold">Skills</p>
         </div>
       </FullPageScroll>
     </>
