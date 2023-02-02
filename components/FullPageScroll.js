@@ -26,6 +26,9 @@ const FullPageScroll = ({ children, className }) => {
         <li className="menu-item" data-page="#skills">
           <a></a>
         </li>
+        <li className="menu-item" data-page="#contact">
+          <a></a>
+        </li>
       </ul>
     </>
   );
