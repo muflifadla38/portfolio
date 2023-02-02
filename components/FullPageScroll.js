@@ -7,9 +7,6 @@ const FullPageScroll = ({ children, className }) => {
       animation: "easeInOutQuad",
       time: 1000,
       menu: "ul.side-menu",
-      // scrollBar: true, //show or hide scrollbar (default false),
-      // pageSelectedClass:"active",//css class name for page element if active or selected (default 'active')
-      // menuSelectedClass:"active",//css class name for menu element if active or selected (default 'active')
     });
   }, []);
 
