@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const App = ({ Component, pageProps }) => {
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider defaultTheme="light" attribute="class">
       <div className={inter.className}>
         <Layouts>
           <Component {...pageProps} />
