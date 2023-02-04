@@ -5,11 +5,11 @@
 /* CSS Custom */
 @layer components {
   .scroll-page .scroll-section {
-    @apply container h-screen w-3/4 mx-auto;
+    @apply h-screen mx-auto;
   }
 
   .scroll-section .scroll-item {
-    @apply h-full flex items-center justify-center mx-auto;
+    @apply h-full w-3/4 flex items-center justify-center mx-auto;
   }
 
   .side-menu {
