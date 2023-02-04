@@ -15,9 +15,7 @@ const Layouts = ({ children }) => {
         <title>Mufli | Web Developer</title>
         <link rel="apple-touch-icon" href="/favicon.ico" />
       </Head>
-      <div>
-        <main>{children}</main>
-      </div>
+      <main>{children}</main>
     </>
   );
 };

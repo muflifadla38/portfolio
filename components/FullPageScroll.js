@@ -1,9 +1,18 @@
 import ScrollPage from "scrollpage-js/scrollpage";
+import {
+  HiBeaker,
+  HiBookOpen,
+  HiBriefcase,
+  HiBuildingOffice2,
+  HiEnvelope,
+  HiHome,
+  HiUser,
+} from "react-icons/hi2";
 import { useEffect } from "react";
 
-const FullPageScroll = ({ children, className }) => {
+const FullPageScroll = ({ children, className, ...rest }) => {
   useEffect(() => {
-    new ScrollPage(".scroll-section", {
+    new ScrollPage(".scroll-page", {
       animation: "easeInOutQuad",
       time: 1000,
       menu: "ul.side-menu",
@@ -12,22 +21,27 @@ const FullPageScroll = ({ children, className }) => {
 
   return (
     <>
-      <div className={"scroll-section w-full " + className}>{children}</div>
-      <ul class="side-menu">
+      <div className={"scroll-page w-full " + className} {...rest}>
+        {children}
+      </div>
+      <ul className="side-menu">
         <li className="menu-item " data-page="#introduction">
-          <a></a>
+          <HiHome />
         </li>
         <li className="menu-item " data-page="#profile">
-          <a></a>
+          <HiUser />
         </li>
         <li className="menu-item" data-page="#education">
-          <a></a>
+          <HiBookOpen />
         </li>
         <li className="menu-item" data-page="#skills">
-          <a></a>
+          <HiBeaker />
+        </li>
+        <li className="menu-item" data-page="#portfolio">
+          <HiBriefcase />
         </li>
         <li className="menu-item" data-page="#contact">
-          <a></a>
+          <HiEnvelope />
         </li>
       </ul>
     </>
