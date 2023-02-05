@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import FullPageScroll from "@/components/FullPageScroll";
 import Input from "@/components/Input";
 import TextArea from "@/components/TextArea";
-import Image from "next/image";
+import profileImg from "../public/images/profile.png";
 
 const Home = () => {
   const [screenWidth, setScreenWidth] = useState(0);
@@ -64,7 +65,7 @@ const Home = () => {
           <div className="scroll-item xs:flex-col">
             <div className="mx-auto">
               <Image
-                src="/../public/images/profile.png"
+                src={profileImg}
                 alt="profile"
                 width={300}
                 height={300}
