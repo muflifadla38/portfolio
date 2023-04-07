@@ -3,7 +3,6 @@ import {
   HiBeaker,
   HiBookOpen,
   HiBriefcase,
-  HiBuildingOffice2,
   HiEnvelope,
   HiHome,
   HiUser,
