@@ -16,25 +16,35 @@ const IntroSection = ({ screenWidth, palette }) => {
             className="mx-auto"
           />
         </div>
-        <div className="xs:text-center sm:w-3/4 mx-5 my-4">
+        <div className="xs:text-center sm:w-1/2 mx-5 my-6">
           <p className="sm:text-xl font-bold">Hello I&apos;m</p>
-          <div className="text-4xl xs:text-2xl font-bold mt-2 mb-4">
+          <div className="text-4xl xs:text-2xl font-bold mt-2 mb-6">
             <p className="text-slate-500">
               Mufly <span className="text-slate-900">Fadla</span>
             </p>
           </div>
-          <p className="text-lg font-semibold my-2">
+          <p className="text-lg font-semibold my-4">
             Fullstack Web {screenWidth > 640 ? "Developer" : "Dev"}
           </p>
-          <p className="text-md my-2">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
+          <p className="text-md my-4">
+            Halo, saya seorang web developer, saya menyukai tantangan dalam
+            menciptakan solusi kreatif dan inovatif untuk masalah teknologi.
+            Situs web ini adalah tempat saya menunjukkan karya saya dan
+            memperkenalkan diri kepada Anda.
           </p>
-          <Button
-            href="#"
-            type={`bg-${palette.primary}-500 hover:bg-${palette.primary}-600 `}
-            text="Download CV"
-            icon={<HiCloudArrowDown className="w-5 h-5" />}
-          />
+          <div className="mt-8 flex space-x-6">
+            <Button
+              href="#"
+              type={`bg-${palette.primary}-500 hover:bg-${palette.primary}-600 `}
+              text="Download CV"
+              icon={<HiCloudArrowDown className="w-5 h-5" />}
+            />
+            <Button
+              href="#"
+              type={`bg-${palette.secondary}-500 hover:bg-${palette.secondary}-600 `}
+              text="Hire Me!"
+            />
+          </div>
         </div>
       </div>
     </div>
