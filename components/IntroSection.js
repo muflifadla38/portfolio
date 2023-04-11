@@ -33,6 +33,7 @@ const IntroSection = ({ screenWidth, palette }) => {
             memperkenalkan diri kepada Anda.
           </p>
           <div className="mt-8 flex space-x-6">
+            {/* ADD button link */}
             <Button
               href="#"
               type={`bg-${palette.primary}-500 hover:bg-${palette.primary}-600 `}

@@ -23,6 +23,7 @@ const Home = () => {
       <FullPageScroll className="bg-slate-50 blue:bg-indigo-500 text-slate-800 mx-auto">
         <IntroSection screenWidth={screenWidth} palette={palette} />
         <ProfileSection />
+        {/* ADD services section */}
         <EducationSection />
         <SkillSection />
         <PortfolioSection />
