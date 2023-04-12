@@ -1,7 +1,7 @@
 import ScrollPage from "scrollpage-js/scrollpage";
 import {
+  HiAcademicCap,
   HiBeaker,
-  HiBookOpen,
   HiBriefcase,
   HiEnvelope,
   HiHome,
@@ -31,7 +31,7 @@ const FullPageScroll = ({ children, className, ...rest }) => {
           <HiUser />
         </li>
         <li className="menu-item" data-page="#education">
-          <HiBookOpen />
+          <HiAcademicCap />
         </li>
         <li className="menu-item" data-page="#skills">
           <HiBeaker />
