@@ -2,6 +2,7 @@ import Image from "next/image";
 import profileImg from "../public/images/profile.png";
 import Button from "@/components/Button";
 import { HiCloudArrowDown } from "react-icons/hi2";
+import Link from "next/link";
 
 const IntroSection = ({ screenWidth, palette }) => {
   return (
@@ -33,15 +34,14 @@ const IntroSection = ({ screenWidth, palette }) => {
             memperkenalkan diri kepada Anda.
           </p>
           <div className="mt-8 flex space-x-6">
-            {/* ADD button link */}
             <Button
-              href="#"
+              href="./files/CV.pdf"
               type={`bg-${palette.primary}-500 hover:bg-${palette.primary}-600 `}
               text="Download CV"
               icon={<HiCloudArrowDown className="w-5 h-5" />}
             />
             <Button
-              href="#"
+              href="https://wa.me/6289669644474"
               type={`bg-${palette.secondary}-500 hover:bg-${palette.secondary}-600 `}
               text="Hire Me!"
             />
