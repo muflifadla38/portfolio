@@ -6,6 +6,7 @@ import ProfileSection from "@/components/ProfileSection";
 import EducationSection from "@/components/EducationSection";
 import SkillSection from "@/components/SkillSection";
 import PortfolioSection from "@/components/PortfolioSection";
+import ServicesSection from "@/components/ServicesSection";
 
 const Home = () => {
   const palette = {
@@ -23,7 +24,7 @@ const Home = () => {
       <FullPageScroll className="bg-slate-50 blue:bg-indigo-500 text-slate-800 mx-auto">
         <IntroSection screenWidth={screenWidth} palette={palette} />
         <ProfileSection />
-        {/* ADD services section */}
+        <ServicesSection />
         <EducationSection />
         <SkillSection />
         <PortfolioSection />
