@@ -36,13 +36,13 @@ const IntroSection = ({ screenWidth, palette }) => {
           <div className="mt-8 flex space-x-6">
             <Button
               href="./files/CV.pdf"
-              type={`bg-${palette.primary}-500 hover:bg-${palette.primary}-600 `}
+              type={`bg-slate-500 hover:bg-${palette.primary}-600 text-slate-100 `}
               text="Download CV"
               icon={<HiCloudArrowDown className="w-5 h-5" />}
             />
             <Button
               href="https://wa.me/6289669644474"
-              type={`bg-${palette.secondary}-500 hover:bg-${palette.secondary}-600 `}
+              type={`hover:bg-slate-600 border-2 border-slate-500 text-slate-500 hover:text-slate-100 `}
               text="Hire Me!"
             />
           </div>
