@@ -12,7 +12,7 @@ const EducationSection = () => {
             <div className="flex flex-row gap-x-14">
               <div className="col">
                 <ol className="relative border-l border-slate-200 dark:border-slate-700">
-                  <li className="min-h-44 mb-10 ml-8 block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-xl hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700">
+                  <li className="min-h-44 mb-10 ml-8 block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-xl hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700 transition-all ease-in delay-0 duration-200 ">
                     <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-100 rounded-full -left-3 dark:ring-slate-900 dark:bg-indigo-900">
                       <HiAcademicCap className="fill-indigo-800 dark:fill-slate-300" />
                     </span>
@@ -29,7 +29,7 @@ const EducationSection = () => {
                       Agustus 2016 - Agustus 2021
                     </time>
                   </li>
-                  <li className="min-h-44 mb-10 ml-8 block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-xl hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700">
+                  <li className="min-h-44 mb-10 ml-8 block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-xl hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700 transition-all ease-in delay-0 duration-200 ">
                     <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-100 rounded-full -left-3 dark:ring-slate-900 dark:bg-indigo-900">
                       <HiAcademicCap className="fill-indigo-800 dark:fill-slate-300" />
                     </span>
@@ -46,7 +46,7 @@ const EducationSection = () => {
                       Juli 2020 - November 2020
                     </time>
                   </li>
-                  <li className="min-h-44 ml-8 block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-xl hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700">
+                  <li className="min-h-44 ml-8 block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-xl hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700 transition-all ease-in delay-0 duration-200 ">
                     <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-100 rounded-full -left-3 dark:ring-slate-900 dark:bg-indigo-900">
                       <HiAcademicCap className="fill-indigo-800 dark:fill-slate-300" />
                     </span>
@@ -67,7 +67,7 @@ const EducationSection = () => {
               </div>
               <div className="col">
                 <ol className="relative border-r border-slate-200 dark:border-slate-700">
-                  <li className="min-h-44 mb-10 mr-8 block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-xl hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700">
+                  <li className="min-h-44 mb-10 mr-8 block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-xl hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700 transition-all ease-in delay-0 duration-200 ">
                     <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-100 rounded-full -right-3 dark:ring-slate-900 dark:bg-indigo-900">
                       <HiUserGroup className="fill-indigo-800 dark:fill-slate-300" />
                     </span>
@@ -84,7 +84,7 @@ const EducationSection = () => {
                       2018-2019
                     </time>
                   </li>
-                  <li className="min-h-44 mb-10 mr-8 block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-xl hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700">
+                  <li className="min-h-44 mb-10 mr-8 block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-xl hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700 transition-all ease-in delay-0 duration-200 ">
                     <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-100 rounded-full -right-3 dark:ring-slate-900 dark:bg-indigo-900">
                       <HiUserGroup className="fill-indigo-800 dark:fill-slate-300" />
                     </span>
