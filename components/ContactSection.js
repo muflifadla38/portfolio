@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Input from "@/components/Input";
 import TextArea from "@/components/TextArea";
+import Button from "./Button";
 
 const ContactSection = ({ screenWidth }) => {
   const embedMap = (
@@ -91,9 +92,11 @@ const ContactSection = ({ screenWidth }) => {
                 />
               </div>
               <div className="text-center">
-                <button className="w-full text-white bg-indigo-500 dark:bg-indigo-600 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 dark:hover:bg-indigo-500 rounded text-md">
-                  Send
-                </button>
+                <Button
+                  href="/"
+                  type="bg-slate-500 hover:bg-slate-600 text-slate-100 w-full rounded border-0 focus:outline-none"
+                  text="Send"
+                />
               </div>
             </div>
           </div>
