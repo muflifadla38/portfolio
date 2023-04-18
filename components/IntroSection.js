@@ -35,16 +35,13 @@ const IntroSection = ({ screenWidth, palette }) => {
           </p>
           <div className="mt-8 flex space-x-6">
             <Button
-              href="./files/CV.pdf"
-              type={`bg-slate-500 hover:bg-${palette.primary}-600 text-slate-100 `}
-              text="Download CV"
-              icon={<HiCloudArrowDown className="w-5 h-5" />}
-            />
-            <Button
               href="https://wa.me/6289669644474"
-              type={`hover:bg-slate-600 border-2 border-slate-500 text-slate-500 hover:text-slate-100 `}
+              type={`bg-slate-500 hover:bg-${palette.primary}-600 text-slate-100 `}
               text="Hire Me!"
             />
+            {/* DO: Social Link */}
+            {/* https://alexcalia.com/#home */}
+            {/* https://www.figma.com/file/rXbvjYGvWrtqjqWB6ddzMQ/Portfolio-Website-(Community)?node-id=0-1&t=ZcNaydsWGmN9B8ZR-0 */}
           </div>
         </div>
       </div>
