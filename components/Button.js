@@ -10,8 +10,8 @@ const Button = ({ type = "bg-primary-400", text, icon, href, ...rest }) => {
       {...rest}
       className={`inline-flex items-center justify-center rounded-lg py-2.5 px-6 text-center text-base font-medium hover:bg-opacity-90 transition-all ease-in delay-0 duration-300 ${type} `}
     >
-      {icon ? <span className="mr-2">{icon}</span> : null}
-      {text}
+      {icon ? <span>{icon}</span> : null}      
+      {icon ? <span className="ml-2">{text}</span> : <span>{text}</span>}
     </Component>
   );
 };
