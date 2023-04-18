@@ -31,12 +31,7 @@ const ProfileSection = () => (
               text="Download CV"
               icon={<HiCloudArrowDown className="w-5 h-5" />}
             />
-            {/* DO: Social Link */}
-            {/* https://alexcalia.com/#home */}
-            {/* https://www.figma.com/file/rXbvjYGvWrtqjqWB6ddzMQ/Portfolio-Website-(Community)?node-id=0-1&t=ZcNaydsWGmN9B8ZR-0 */}
           </div>
-          {/* DO: Button */}
-          {/* DO: Change content & value Bar */}
         </div>
 
         <div className="flex items-center flex-wrap justify-evenly gap-8 w-72 -rotate-12 ml-24">
