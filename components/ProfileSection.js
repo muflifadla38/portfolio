@@ -1,7 +1,6 @@
 import { HiCloudArrowDown } from "react-icons/hi2";
 import Button from "./Button";
 import CircularProgress from "./CircularProgress";
-import Link from "next/link";
 
 const ProfileSection = () => (
   <div id="profile" className="scroll-section">
