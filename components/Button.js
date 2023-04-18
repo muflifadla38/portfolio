@@ -1,14 +1,18 @@
 import Link from "next/link";
 
-const Button = ({ type = "bg-primary-400", text, icon, ...rest }) => {
+const Button = ({ type = "bg-primary-400", text, icon, href, ...rest }) => {
+  const regex = /^\/?#/;
+  const isHash = regex.test(href);
+  const Component = isHash ? "a" : Link;
   return (
-    <Link
+    <Component
+      href={href}
       {...rest}
-      className={`inline-flex items-center justify-center rounded-lg py-3 px-6 text-center text-base font-medium hover:bg-opacity-90 transition-all ease-in delay-0 duration-300 ${type} `}
+      className={`inline-flex items-center justify-center rounded-lg py-2.5 px-6 text-center text-base font-medium hover:bg-opacity-90 transition-all ease-in delay-0 duration-300 ${type} `}
     >
       {icon ? <span className="mr-2">{icon}</span> : null}
       {text}
-    </Link>
+    </Component>
   );
 };
 
