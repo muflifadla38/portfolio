@@ -6,9 +6,6 @@ import Link from "next/link";
 const ProfileSection = () => (
   <div id="profile" className="scroll-section">
     <div className="scroll-item">
-      {/* DO: First! */}
-      {/* Ref: https://www.behance.net/gallery/112340537/Personal-portfolio-template?tracking_source=search_projects%7CPERSONAL+PORTFOLIO+TEMPLATE */}
-
       <div className="flex justify-center">
         <div className="flex-col w-2/5 mr-24">
           <p className="text-3xl font-bold mb-8">About Me</p>
