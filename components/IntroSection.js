@@ -28,7 +28,7 @@ const IntroSection = ({ screenWidth, palette }) => {
             Fullstack Web {screenWidth > 640 ? "Developer" : "Dev"}
           </p>
           <p className="text-md my-4">
-            Halo, saya seorang web developer, saya menyukai tantangan dalam
+            Halo, saya seorang Fullstack Web Developer, saya menyukai tantangan dalam
             menciptakan solusi kreatif dan inovatif untuk masalah teknologi.
             Situs web ini adalah tempat saya menunjukkan karya saya dan
             memperkenalkan diri kepada Anda.
