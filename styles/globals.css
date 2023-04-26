@@ -17,7 +17,7 @@
   }
 
   .menu-item {
-    @apply my-3 p-2 sm:p-3 bg-slate-200 hover:bg-slate-300 dark:bg-slate-500 dark:hover:bg-slate-600 rounded-full shadow-xl duration-1000 hover:duration-200;
+    @apply my-3 p-3 sm:w-12 sm:h-12 bg-slate-200 hover:bg-slate-300 dark:bg-slate-500 dark:hover:bg-slate-600 rounded-full shadow-xl duration-1000 hover:duration-200;
   }
 
   .menu-item.active {
@@ -25,10 +25,78 @@
   }
 
   .menu-item svg {
-    @apply w-4 h-4 sm:w-6 sm:h-6 fill-indigo-500 dark:fill-slate-200;
+    @apply w-4 h-4 sm:w-6 sm:h-6 fill-indigo-500 dark:fill-slate-200 transition-all duration-500;
   }
 
   .menu-item.active svg {
     @apply fill-slate-200;
   }
+
+  /* Menu */
+  .tool-toggler + label:before,
+  .tool-toggler + label,
+  .tool-toggler + label:after {
+    @apply w-6 h-1 rounded-lg bg-indigo-500 absolute transition-all duration-500;
+  }
+
+  /* animate menu when checked */
+  .tool-toggler:checked + label:before,
+  .tool-toggler:checked + label:after {
+    @apply top-0 w-6;
+  }
+
+  .tool-toggler:checked + label {
+    @apply bg-transparent;
+  }
+
+  .tool-toggler:checked + label:before {
+    @apply rotate-45;
+  }
+
+  .tool-toggler:checked + label:after {
+    @apply -rotate-45;
+  }
+
+  /* Item */
+  .tool-toggler:checked ~ ul .tool-item a {
+    @apply pointer-events-auto;
+  }
+
+  .tool-toggler:checked ~ ul .tool-item {
+    @apply opacity-100;
+  }
+
+  /* Item position */
+  .tool-toggler:checked ~ ul .tool-item:nth-child(1) {
+    transform: rotate(20deg) translateX(-110px);
+  }
+
+  .tool-toggler:checked ~ ul .tool-item:nth-child(2) {
+    transform: rotate(-10deg) translateX(-110px);
+  }
+
+  .tool-toggler:checked ~ ul .tool-item:nth-child(3) {
+    transform: rotate(-40deg) translateX(-110px);
+  }
+
+  .tool-toggler:checked ~ ul .tool-item:nth-child(4) {
+    transform: rotate(-70deg) translateX(-110px);
+  }
+
+  .tool-item:nth-child(1) svg {
+    transform: rotate(-20deg);
+  }
+  .tool-item:nth-child(2) svg {
+    transform: rotate(10deg);
+  }
+  .tool-item:nth-child(3) p {
+    transform: rotate(40deg);
+  }
+  .tool-item:nth-child(4) svg {
+    transform: rotate(70deg);
+  }
+
+  /* Item rotate on close */
 }
+
+/* DO: hover to hover, change (label input) to icon */
