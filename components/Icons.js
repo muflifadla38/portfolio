@@ -17,6 +17,7 @@ import MysqlIcon from "./Icons/MysqlIcon";
 import NetworkIcon from "./Icons/NetworkIcon";
 import NextJsIcon from "./Icons/NextJsIcon";
 import NodeJsIcon from "./Icons/NodeJsIcon";
+import NotFoundIcon from "./Icons/NotFoundIcon";
 import PhotoshopIcon from "./Icons/PhotoshopIcon";
 import PhpIcon from "./Icons/PhpIcon";
 import PythonIcon from "./Icons/PythonIcon";
@@ -46,6 +47,7 @@ export {
   NetworkIcon,
   NextJsIcon,
   NodeJsIcon,
+  NotFoundIcon,
   PhotoshopIcon,
   PhpIcon,
   PythonIcon,
