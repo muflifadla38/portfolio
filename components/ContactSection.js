@@ -1,9 +1,11 @@
+import { useTranslation } from "react-i18next";
 import Link from "next/link";
 import Input from "@/components/Input";
 import TextArea from "@/components/TextArea";
-import Button from "./Button";
+import Button from "@/components/Button";
 
-const ContactSection = ({ screenWidth }) => {
+const ContactSection = ({ slideMode = true, screenWidth }) => {
+  const { t } = useTranslation();
   const embedMap = (
     <div className="lg:w-2/3 md:w-2/3 sm:w-full xs:w-full bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 sm:p-8 xs:pt-64 xs:p-4 flex items-end justify-start relative">
       <iframe
@@ -20,30 +22,32 @@ const ContactSection = ({ screenWidth }) => {
       />
       <div className="bg-slate-100 dark:bg-slate-800 relative flex flex-wrap py-6 w-full rounded shadow-md">
         <div className="xl:w-1/2 px-6">
-          <h2 className="title-font font-semibold text-gray-900 dark:text-slate-500 tracking-widest text-xs">
-            ADDRESS
-          </h2>
-          <p className="mt-1 text-sm">
-            Jl. Gagak No. 48C, Kel. Punggaloba, Kec. Kendari Barat, Kota
-            Kendari, Sulawesi Tenggara 93123
+          <p className="title-font font-semibold text-gray-900 dark:text-slate-500 tracking-widest text-xs uppercase">
+            {t("contact.map.addressLabel")}
           </p>
+          <Link
+            href="https://goo.gl/maps/Zab6ijkpixPNX2Cq6"
+            className="mt-1 text-sm"
+          >
+            {t("contact.map.address")}
+          </Link>
         </div>
         <div className="xl:w-1/2 px-6 lg:mt-0">
-          <h2 className="font-semibold text-gray-900 dark:text-slate-500 tracking-widest mt-4 text-xs">
-            EMAIL
-          </h2>
+          <p className="font-semibold text-gray-900 dark:text-slate-500 tracking-widest mt-4 text-xs uppercase">
+            {t("contact.map.emailLabel")}
+          </p>
           <Link
             href="mailto:muflyfadlasyihab@gmail.com"
             className="xs:bg-yellow-4000 text-indigo-500 dark:text-indigo-400 text-sm"
           >
-            muflyfadlasyihab@gmail.com
+            {t("contact.map.email")}
           </Link>
 
-          <h2 className="font-semibold text-gray-900 dark:text-slate-500 tracking-widest text-xs mt-4">
-            PHONE
-          </h2>
+          <p className="font-semibold text-gray-900 dark:text-slate-500 tracking-widest text-xs mt-4 uppercase">
+            {t("contact.map.phoneLabel")}
+          </p>
           <Link href="tel:+6289669644474" className="text-sm">
-            0896-6964-4474
+            {t("contact.map.phone")}
           </Link>
         </div>
       </div>
@@ -54,39 +58,39 @@ const ContactSection = ({ screenWidth }) => {
     <>
       <div
         id="contact"
-        className="scroll-section text-slate-600 dark:text-slate-400 body-font relative"
+        className={
+          (slideMode ? "scroll-section" : "section") +
+          " text-slate-600 dark:text-slate-400 body-font relative"
+        }
       >
-        <div className="scroll-item">
+        <div className={slideMode ? "scroll-item" : "section-item"}>
           <div className="flex sm:flex-nowrap flex-wrap">
             {screenWidth > 640 && embedMap}
             <div className="lg:w-1/2 md:w-1/2 flex flex-col md:ml-auto w-full md:mt-0 text-slate-400">
-              <h2 className="text-slate-900 dark:text-slate-200 text-lg mb-1 font-semibold">
-                Get in Touch With Us
-              </h2>
-              <p className="mb-5">
-                Need help with our service plans? Here&apos;s how you can reach
-                us
+              <p className="text-slate-900 dark:text-slate-200 text-lg mb-1 font-semibold">
+                {t("contact.subtitle")}
               </p>
+              <p className="mb-5">{t("contact.description")}</p>
               <div className="text-slate-600 dark:text-slate-400">
                 <Input
                   className="h-8"
-                  label="Name"
+                  label={t("contact.form.name")}
                   peer="Please enter your name"
                 />
                 <Input
                   className="h-8"
-                  label="Email"
+                  label={t("contact.form.email")}
                   type="email"
                   peer="Please enter your email"
                 />
                 <Input
                   className="h-8"
-                  label="Whatsapp"
+                  label={t("contact.form.whatsapp")}
                   type="tel"
                   peer="Please enter a valid whatsapp number"
                 />
                 <TextArea
-                  label="Message"
+                  label={t("contact.form.message")}
                   peer="Please enter your message"
                   className="h-32"
                 />
@@ -95,23 +99,31 @@ const ContactSection = ({ screenWidth }) => {
                 <Button
                   href="/"
                   type="bg-slate-500 hover:bg-slate-600 text-slate-100 w-full rounded border-0 focus:outline-none"
-                  text="Send"
+                  text={t("contact.form.button")}
                 />
               </div>
             </div>
           </div>
         </div>
       </div>
+
       {screenWidth < 640 && (
         <div
           id="contact"
-          className="scroll-section text-slate-600 dark:text-slate-400 body-font relative"
+          className={
+            (slideMode ? "scroll-section" : "section") +
+            " text-slate-600 dark:text-slate-400 body-font relative"
+          }
         >
-          <div className="scroll-item">
+          <div
+            className={
+              (slideMode ? "scroll-item" : "section-item") + " flex-col"
+            }
+          >
             <div className="sm:flex-nowrap flex-wrap">
-              <h2 className="text-slate-900 dark:text-slate-200 text-lg text-center mb-4 font-semibold">
-                Location
-              </h2>
+              <p className="text-slate-900 dark:text-slate-200 text-lg text-center mb-4 font-semibold">
+                {t("contact.title")}
+              </p>
               {embedMap}
             </div>
           </div>

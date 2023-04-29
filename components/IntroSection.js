@@ -1,16 +1,22 @@
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 import Image from "next/image";
-import profileImg from "../public/images/profile.png";
-import Button from "@/components/Button";
 import Link from "next/link";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import Button from "@/components/Button";
 
-const IntroSection = ({ screenWidth, palette }) => {
+const IntroSection = ({ slideMode = true, screenWidth, palette }) => {
+  const { t } = useTranslation();
+
   return (
-    <div id="introduction" className="scroll-section">
-      <div className="scroll-item xs:flex-col">
+    <div id="introduction" className={slideMode ? "scroll-section" : "section"}>
+      <div
+        className={
+          (slideMode ? "scroll-item" : "section-item") + " xs:flex-col"
+        }
+      >
         <div className="mx-auto">
           <Image
-            src={profileImg}
+            src={t("intro.image")}
             alt="profile"
             width={300}
             height={300}
@@ -18,21 +24,20 @@ const IntroSection = ({ screenWidth, palette }) => {
           />
         </div>
         <div className="xs:text-center sm:w-1/2 mx-5 my-6">
-          <p className="sm:text-xl font-bold">Hello I&apos;m</p>
+          <p className="sm:text-xl font-bold">{t("intro.title")}</p>
+          {/* <p className="sm:text-xl font-bold">Hello I&apos;m</p> */}
           <div className="text-4xl xs:text-2xl font-bold mt-2 mb-6">
             <p className="text-slate-500">
-              Mufly <span className="text-slate-900">Fadla</span>
+              {t("intro.firstName")}{" "}
+              <span className="text-slate-900 dark:text-slate-200">
+                {t("intro.middleName")}
+              </span>
             </p>
           </div>
           <p className="text-lg font-semibold my-4">
-            Fullstack Web {screenWidth > 640 ? "Developer" : "Dev"}
+            Full Stack Web {screenWidth > 640 ? "Developer" : "Dev"}
           </p>
-          <p className="text-md my-4">
-            Halo, saya seorang Fullstack Web Developer, saya menyukai tantangan dalam
-            menciptakan solusi kreatif dan inovatif untuk masalah teknologi.
-            Situs web ini adalah tempat saya menunjukkan karya saya dan
-            memperkenalkan diri kepada Anda.
-          </p>
+          <p className="text-md my-4">{t("intro.description")}</p>
 
           <div className="mt-8 flex space-x-16">
             <Button

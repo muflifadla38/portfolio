@@ -1,4 +1,3 @@
-import { Molengo } from "@next/font/google";
 import {
   BootstrapIcon,
   Css3Icon,
@@ -27,10 +26,10 @@ import {
   NetworkIcon,
 } from "./Icons";
 
-const SkillSection = () => {
+const SkillSection = ({ slideMode = true }) => {
   return (
-    <div id="skills" className="scroll-section">
-      <div className="scroll-item flex-col">
+    <div id="skills" className={slideMode ? "scroll-section" : "section"}>
+      <div className={(slideMode ? "scroll-item" : "section-item") + " flex-col"}>
         <div className="text-center max-w-xl mb-8">
           <p className="font-bold text-3xl mb-4">Skill & Tools</p>
         </div>
@@ -305,7 +304,7 @@ const SkillSection = () => {
               </div>
             </div>
             <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              Jaringan
+              Network
             </p>
           </div>
         </div>

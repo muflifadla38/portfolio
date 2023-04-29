@@ -1,0 +1,141 @@
+{
+  "intro": {
+    "title": "Hello, I'm",
+    "firstName": "Mufly",
+    "middleName": "Fadla",
+    "subtitle": "Fullstack Web Developer",
+    "image": "/images/profile.png",
+    "description": "Hello, I'm a Fullstack Web Developer, and I love the challenge of creating creative and innovative solutions to technical problems that require a lot of effort to solve. This website is where I present my work and introduce myself to you.",
+    "button": "Hire Me!"
+  },
+  "about": {
+    "title": "About Me",
+    "description": {
+      "firstParagraph": "I am a Full Stack Web Developer with more than a year of experience in developing various web applications that use modern technologies such as Laravel, ReactJS, NextJS and Node.js.",
+      "secondParagraph": "I have a great passion for building tech solutions and improving the user experience."
+    },
+    "progress": { "FE": "Front-End", "BE": "Back-End", "UI": "UI/ UX" },
+    "button": "View Projects"
+  },
+  "services": {
+    "title": "Services",
+    "description": "Provide creative solutions for website development and design that improves the performance of search engines.",
+    "list": [
+      {
+        "title": "UI/UX Design",
+        "icon": "HiDevicePhoneMobile",
+        "description": "Create a good user experience with a website or app"
+      },
+      {
+        "title": "Web Design",
+        "icon": "HiComputerDesktop",
+        "description": "Create appealing and functional website designs"
+      },
+      {
+        "title": "Web Development",
+        "icon": "HiCodeBracket",
+        "description": "Build functional and interactive websites"
+      },
+      {
+        "title": "Graphic Design",
+        "icon": "HiPaintBrush",
+        "description": "Create graphic designs for websites and social media"
+      },
+      {
+        "title": "Search Engine Optimization",
+        "icon": "HiRocketLaunch",
+        "description": "Increase website rankings using search engines"
+      },
+      {
+        "title": "Content Management System",
+        "icon": "HiDocumentText",
+        "description": "Develop content management systems for websites"
+      }
+    ]
+  },
+  "education": {
+    "title": "Education & Organization",
+    "listEducation": [
+      {
+        "course": "Bachelor Geophysics",
+        "label": "Latest",
+        "institute": "Hasanuddin University",
+        "time": "August 2016 - August 2021"
+      },
+      {
+        "course": "Front-End Web Developer",
+        "program": "Bootcamp Baparekraf Digital Talent",
+        "institute": "Dicoding",
+        "time": "July 2020 - November 2020"
+      },
+      {
+        "course": "Data Science & Machine Learning With Python",
+        "program": "Workshop",
+        "institute": "Babastudio",
+        "time": "August 2020 - September 2020"
+      }
+    ],
+    "organization": [
+      {
+        "title": "Physics Student Association",
+        "institute": "Hasanuddin University",
+        "position": "Member of the Education Division",
+        "time": "2018-2019"
+      },
+      {
+        "title": "Society of Petroleum Engineers (SPE)",
+        "institute": "Hasanuddin University",
+        "position": "Head of Training Division",
+        "time": "2019 - 2020"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "list": [
+      {
+        "title": "Geoservices",
+        "description": "Build web profile for partnership details of Kickslab Indonesia",
+        "image": "/images/project-1.webp",
+        "button": "Visit"
+      },
+      {
+        "title": "Geoservices",
+        "description": "Build web profile for partnership details of Kickslab Indonesia",
+        "image": "/images/project-1.webp",
+        "button": "Visit"
+      },
+      {
+        "title": "Geoservices",
+        "description": "Build web profile for partnership details of Kickslab Indonesia",
+        "image": "/images/project-1.webp",
+        "button": "Visit"
+      },
+      {
+        "title": "Geoservices",
+        "description": "Build web profile for partnership details of Kickslab Indonesia",
+        "image": "/images/project-1.webp",
+        "button": "Visit"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Location",
+    "subtitle": "Get in Touch With Me",
+    "description": "Need help working on a project? Here's how you can contact me.",
+    "map": {
+      "addressLabel": "Address",
+      "address": "Jalan Gagak No. 48C, Punggaloba, Kendari Barat, Kota Kendari, Sulawesi Tenggara 93123",
+      "emailLabel": "Email",
+      "email": "muflyfadlasyihab@gmail.com",
+      "phoneLabel": "Phone",
+      "phone": "0896-6964-4474"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "button": "Send"
+    }
+  }
+}

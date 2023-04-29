@@ -1,0 +1,141 @@
+{
+  "intro": {
+    "title": "Halo, Saya",
+    "firstName": "Mufly",
+    "middleName": "Fadla",
+    "subtitle": "Full Stack Web Developer",
+    "image": "/images/profile.png",
+    "description": "Halo, saya seorang Fullstack Web Developer, saya menyukai tantangan dalam menciptakan solusi kreatif dan inovatif untuk masalah teknologi. Situs web ini adalah tempat saya menunjukkan karya saya dan memperkenalkan diri kepada Anda."
+  },
+  "about": {
+    "title": "Tentang saya",
+    "description": {
+      "firstParagraph": "Saya adalah seorang Fullstack Web Developer dengan pengalaman lebih dari 1 tahun dalam mengembangkan berbagai aplikasi web dengan teknologi modern seperti Laravel, ReactJS, NextJS dan Node.js.",
+      "secondParagraph": "Saya memiliki passion yang besar dalam membangun solusi teknologi dan meningkatkan pengalaman pengguna."
+    },
+    "progress": { "FE": "Front-End", "BE": "Back-End", "UI": "UI/ UX" },
+    "button": "Lihat Project"
+  },
+  "services": {
+    "title": "Layanan",
+    "description": "Menyediakan solusi kreatif untuk pengembangan dan perancangan situs web serta meningkatkan kinerja di mesin pencari.",
+    "list": [
+      {
+        "title": "UI/UX Design",
+        "icon": "HiDevicePhoneMobile",
+        "description": "Membuat pengalaman pengguna yang baik di situs web atau aplikasi"
+      },
+      {
+        "title": "Web Design",
+        "icon": "HiComputerDesktop",
+        "description": "Membuat desain situs web yang menarik dan fungsional"
+      },
+      {
+        "title": "Web Development",
+        "icon": "HiCodeBracket",
+        "description": "Membangun situs web yang berfungsi dan interaktif"
+      },
+      {
+        "title": "Graphic Design",
+        "icon": "HiPaintBrush",
+        "description": "Membuat desain grafis untuk situs web dan media sosial"
+      },
+      {
+        "title": "Search Engine Optimization",
+        "icon": "HiRocketLaunch",
+        "description": "Meningkatkan peringkat situs web di mesin pencari"
+      },
+      {
+        "title": "Content Management System",
+        "icon": "HiDocumentText",
+        "description": "Mengembangkan sistem manajemen konten untuk situs web"
+      }
+    ]
+  },
+  "education": {
+    "title": "Pendidikan & Organisasi",
+    "listEducation": [
+      {
+        "course": "S1 Geofisika",
+        "label": "Terbaru",
+        "institute": "Universitas Hasanuddin",
+        "time": "Agustus 2016 - Agustus 2021"
+      },
+      {
+        "course": "Front-End Web Developer",
+        "program": "Bootcamp Baparekraf Digital Talent",
+        "institute": "Dicoding",
+        "time": "Juli 2020 - November 2020"
+      },
+      {
+        "course": "Data Science & Machine Learning Dengan Python",
+        "program": "Workshop",
+        "institute": "Babastudio",
+        "time": "Agustus 2020 - September 2020"
+      }
+    ],
+    "organization": [
+      {
+        "title": "Himpunan Mahasiswa Fisika",
+        "institute": "Universitas Hasanuddin",
+        "position": "Anggota Divisi Pendidikan",
+        "time": "2018-2019"
+      },
+      {
+        "title": "Society of Petroleum Engineers (SPE)",
+        "institute": "Universitas Hasanuddin",
+        "position": "Ketua Divisi Training",
+        "time": "2019 - 2020"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyek",
+    "list": [
+      {
+        "title": "Geoservices",
+        "description": "Bangun web profil untuk detail kemitraan Kickslab Indonesia",
+        "image": "/images/project-1.webp",
+        "button": "Kunjungi"
+      },
+      {
+        "title": "Geoservices",
+        "description": "Bangun web profil untuk detail kemitraan Kickslab Indonesia",
+        "image": "/images/project-1.webp",
+        "button": "Kunjungi"
+      },
+      {
+        "title": "Geoservices",
+        "description": "Bangun web profil untuk detail kemitraan Kickslab Indonesia",
+        "image": "/images/project-1.webp",
+        "button": "Kunjungi"
+      },
+      {
+        "title": "Geoservices",
+        "description": "Bangun web profil untuk detail kemitraan Kickslab Indonesia",
+        "image": "/images/project-1.webp",
+        "button": "Kunjungi"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Lokasi",
+    "subtitle": "Hubungi saya",
+    "description": "Perlu bantuan untuk mengerjakan proyek? Inilah cara Anda dapat menghubungi saya",
+    "map": {
+      "addressLabel": "Alamat",
+      "address": "Jalan Gagak No. 48C, Punggaloba, Kendari Barat, Kota Kendari, Sulawesi Tenggara 93123",
+      "emailLabel": "Email",
+      "email": "muflyfadlasyihab@gmail.com",
+      "phoneLabel": "Telepon",
+      "phone": "0896-6964-4474"
+    },
+    "form": {
+      "name": "Nama",
+      "email": "Email",
+      "whatsapp": "Whatsapp",
+      "message": "Pesan",
+      "button": "Kirim"
+    }
+  }
+}
