@@ -2,14 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(203 213 225 / var(--tw-bg-opacity))
+    rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
 /* CSS Custom */
 @layer components {
+  /* For WebKit-based browsers (e.g. Chrome, Safari) */
+  ::-webkit-scrollbar {
+    @apply w-4;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-500 rounded-full border-4 border-solid border-slate-300;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-300 rounded-full;
+  }
+
   .scroll-page .scroll-section {
     @apply h-screen mx-auto;
   }
 
-  .scroll-section .scroll-item {
+  .scroll-section .scroll-item,
+  .section .section-item {
     @apply h-full w-3/4 flex items-center justify-center mx-auto;
+  }
+
+  .section {
+    @apply py-24;
   }
 
   .side-menu {
@@ -21,7 +45,7 @@
   }
 
   .menu-item.active {
-    @apply bg-indigo-500 hover:bg-indigo-600 text-slate-200 shadow-indigo-300;
+    @apply bg-indigo-500 hover:bg-indigo-600 text-slate-200 shadow-indigo-300 dark:shadow-indigo-800;
   }
 
   .menu-item svg {
@@ -36,7 +60,7 @@
   .tool-toggler + label:before,
   .tool-toggler + label,
   .tool-toggler + label:after {
-    @apply w-6 h-1 rounded-lg bg-indigo-500 absolute transition-all duration-500;
+    @apply w-6 h-1 rounded-lg bg-indigo-500 dark:bg-slate-200 absolute transition-all duration-500;
   }
 
   /* animate menu when checked */
