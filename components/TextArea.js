@@ -6,7 +6,7 @@ const TextArea = ({ label, placeholder = "", peer, className = "" }) => {
       <div className="mb-6">
         <label className="text-sm font-bold">{label}</label>
         <textarea
-          className={`w-full bg-slate-200 dark:bg-slate-800 border-transparent text-slate-900 dark:text-slate-100 mt-2 rounded-lg focus:outline-none focus:shadow-outline peer ${className}`}
+          className={`w-full dark:bg-slate-700 border-transparent text-slate-900 dark:text-slate-100 mt-2 rounded-lg focus:outline-none focus:shadow-outline peer ${className}`}
           placeholder={placeholder}
         />
         {peer && (

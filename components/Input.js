@@ -12,7 +12,7 @@ const Input = ({
       <div className="mb-6 xs:mb-4">
         <label className="text-sm font-bold">{label}</label>
         <input
-          className={`w-full bg-slate-200 dark:bg-slate-800 border-transparent text-slate-900 dark:text-slate-100 mt-2 rounded-md focus:outline-none focus:shadow-outline peer ${className}`}
+          className={`w-full dark:bg-slate-700 border-transparent text-slate-700 dark:text-slate-200 mt-2 rounded-md focus:outline-none focus:shadow-outline peer ${className}`}
           type={type}
           placeholder={placeholder}
         />

@@ -10,7 +10,7 @@ import {
 } from "react-icons/hi2";
 import "@/utils/i18n";
 
-const Nav = ({ slideMode, setSlide }) => {
+const Nav = ({ slideMode, setSlide, colors, color, setColor }) => {
   const [checked, setChecked] = useState(false);
   const { theme, setTheme } = useTheme();
   const { resolvedTheme } = useTheme();
@@ -22,11 +22,6 @@ const Nav = ({ slideMode, setSlide }) => {
     i18n.changeLanguage(newLanguage);
   };
 
-  // const palette = {
-  //   primary: "slate",
-  //   secondary: "indigo",
-  // };
-
   useEffect(() => {
     if (!slideMode) document.body.style.overflow = "visible";
     resolvedTheme === "dark"
@@ -35,7 +30,7 @@ const Nav = ({ slideMode, setSlide }) => {
   }, [slideMode, theme, resolvedTheme]);
 
   return (
-    <nav className="">
+    <nav>
       <div className="side-menu">
         <div className="menu-item block absolute -top-40 right-4">
           <input
@@ -76,10 +71,30 @@ const Nav = ({ slideMode, setSlide }) => {
                 </p>
               </button>
             </li>
-            <li className="menu-item tool-item absolute inset-0 m-auto block opacity-0 duration-500">
+            <li className="menu-item tool-item color-switcher absolute inset-0 m-auto block opacity-0 duration-500">
               <button>
                 <HiPaintBrush />
               </button>
+              <div
+                className={`color-menu opacity-0 p-2 ${color.menu} shadow-md rounded-lg flex absolute bottom-20 right-4 rotate-[70deg]`}
+              >
+                <button
+                  className={`p-2 mx-1 rounded-md ${colors.slate.primary}`}
+                  onClick={() => setColor(colors.slate)}
+                ></button>
+                <button
+                  className={`p-2 mx-1 rounded-md  ${colors.stone}`}
+                  onClick={() => setColor(colors.stone)}
+                ></button>
+                <button
+                  className={`p-2 mx-1 rounded-md  ${colors.pink}`}
+                  onClick={() => setColor(colors.pink)}
+                ></button>
+                <button
+                  className={`p-2 mx-1 rounded-md ${colors.test.primary}`}
+                  onClick={() => setColor(colors.test)}
+                ></button>
+              </div>
             </li>
           </ul>
         </div>

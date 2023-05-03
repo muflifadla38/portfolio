@@ -9,7 +9,12 @@ import {
   HiUser,
 } from "react-icons/hi2";
 
-const FullPageScroll = ({ slideMode, children, className, ...rest }) => {
+const FullPageScroll = ({
+  slideMode,
+  children,
+  className,
+  ...rest
+}) => {
   useEffect(() => {
     new ScrollPage(".scroll-page", {
       animation: "easeInOutQuad",

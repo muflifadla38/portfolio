@@ -10,7 +10,6 @@
 
 /* CSS Custom */
 @layer components {
-  /* For WebKit-based browsers (e.g. Chrome, Safari) */
   ::-webkit-scrollbar {
     @apply w-4;
   }
@@ -118,5 +117,9 @@
   }
   .tool-item:nth-child(4) svg {
     transform: rotate(70deg);
+  }
+
+  .tool-toggler:checked ~ ul .tool-item:nth-child(4) .color-menu {
+    @apply opacity-100 transition-all duration-1000;
   }
 }
