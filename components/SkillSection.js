@@ -26,286 +26,288 @@ import {
   NetworkIcon,
 } from "./Icons";
 
-const SkillSection = ({ slideMode = true }) => {
+const SkillSection = ({ slideMode = true, color }) => {
   return (
     <div id="skills" className={slideMode ? "scroll-section" : "section"}>
-      <div className={(slideMode ? "scroll-item" : "section-item") + " flex-col"}>
+      <div
+        className={(slideMode ? "scroll-item" : "section-item") + " flex-col"}
+      >
         <div className="text-center max-w-xl mb-8">
           <p className="font-bold text-3xl mb-4">Skill & Tools</p>
         </div>
         <div className="flex flex-wrap gap-6 justify-center">
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
-              <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
+              <div className="flex items-center justify-center w-9 h-9 rounded-full">
                 <Html5Icon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              HTML5
-            </p>
+            <p className="text-sm font-semibold tracking-tight">HTML5</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <Css3Icon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              CSS 3
-            </p>
+            <p className="text-sm font-semibold tracking-tight">CSS 3</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <TailwindIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              Tailwind
-            </p>
+            <p className="text-sm font-semibold tracking-tight">Tailwind</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <BootstrapIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              Bootstrap
-            </p>
+            <p className="text-sm font-semibold tracking-tight">Bootstrap</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <JavascriptIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              Javascript
-            </p>
+            <p className="text-sm font-semibold tracking-tight">Javascript</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <JqueryIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              JQuery
-            </p>
+            <p className="text-sm font-semibold tracking-tight">JQuery</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <ReactIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              ReactJS
-            </p>
+            <p className="text-sm font-semibold tracking-tight">ReactJS</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <ReduxIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              Redux
-            </p>
+            <p className="text-sm font-semibold tracking-tight">Redux</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <NextJsIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              NextJS
-            </p>
+            <p className="text-sm font-semibold tracking-tight">NextJS</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <NodeJsIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              NodeJS
-            </p>
+            <p className="text-sm font-semibold tracking-tight">NodeJS</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <ExpressJsIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              ExpressJS
-            </p>
+            <p className="text-sm font-semibold tracking-tight">ExpressJS</p>
           </div>
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <PhpIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              PHP
-            </p>
+            <p className="text-sm font-semibold tracking-tight">PHP</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <LaravelIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              Laravel
-            </p>
+            <p className="text-sm font-semibold tracking-tight">Laravel</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <WordpressIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              Wordpress
-            </p>
+            <p className="text-sm font-semibold tracking-tight">Wordpress</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <PythonIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              Python
-            </p>
+            <p className="text-sm font-semibold tracking-tight">Python</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <MysqlIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              MySQL
-            </p>
+            <p className="text-sm font-semibold tracking-tight">MySQL</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <MongodbIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              MongoDB
-            </p>
+            <p className="text-sm font-semibold tracking-tight">MongoDB</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <FirebaseIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              Firebase
-            </p>
+            <p className="text-sm font-semibold tracking-tight">Firebase</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <HerokuIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              Heroku
-            </p>
+            <p className="text-sm font-semibold tracking-tight">Heroku</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <RestAPIIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              REST API
-            </p>
+            <p className="text-sm font-semibold tracking-tight">REST API</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <FigmaIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              Figma
-            </p>
+            <p className="text-sm font-semibold tracking-tight">Figma</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <AdobeXdIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              Adobe XD
-            </p>
+            <p className="text-sm font-semibold tracking-tight">Adobe XD</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <AdobeIndesignIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              InDesign
-            </p>
+            <p className="text-sm font-semibold tracking-tight">InDesign</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <PhotoshopIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              Photoshop
-            </p>
+            <p className="text-sm font-semibold tracking-tight">Photoshop</p>
           </div>
 
-          <div className="w-24 p-3 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300">
+          <div
+            className={`w-24 p-3 ${color.white} border rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover} dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
+          >
             <div className="flex justify-center mb-2">
               <div className="flex items-center justify-center w-9 h-9 rounded-full text-slate-500">
                 <NetworkIcon />
               </div>
             </div>
-            <p className="text-sm font-semibold tracking-tight text-slate-900 dark:text-white">
-              Network
-            </p>
+            <p className="text-sm font-semibold tracking-tight">Network</p>
           </div>
         </div>
       </div>

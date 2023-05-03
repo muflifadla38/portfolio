@@ -3,7 +3,7 @@ import { HiCloudArrowDown } from "react-icons/hi2";
 import Button from "./Button";
 import CircularProgress from "./CircularProgress";
 
-const ProfileSection = ({ slideMode = true }) => {
+const ProfileSection = ({ slideMode = true, color }) => {
   const { t } = useTranslation();
 
   return (
@@ -18,12 +18,12 @@ const ProfileSection = ({ slideMode = true }) => {
             <div className="mt-8 flex space-x-6">
               <Button
                 href="#portfolio"
-                type={`bg-slate-500 hover:bg-slate-600 text-slate-100`}
+                type={`${color.primary} hover:${color.primaryHover} ${color.textLight}`}
                 text={t("about.button")}
               />
               <Button
                 href="./files/CV.pdf"
-                type={`hover:bg-slate-600 border-2 border-slate-500 text-slate-500 hover:text-slate-100 `}
+                type={`dark:${color.textLight} dark:hover:${color.subPrimary} dark:hover:${color.textBase} hover:${color.primaryHover} border-2 ${color.borderPrimary} hover:border-current ${color.textPrimary} hover:${color.textLight} `}
                 text="Download CV"
                 icon={<HiCloudArrowDown className="w-5 h-5" />}
               />
@@ -31,20 +31,35 @@ const ProfileSection = ({ slideMode = true }) => {
           </div>
 
           <div className="flex items-center flex-wrap justify-evenly gap-8 w-72 -rotate-12 ml-24">
-            <div className="flex items-center justify-center overflow-hidden rounded-full shadow-2xl">
-              <CircularProgress barColor="text-slate-500" className="p-1.5" />
+            <div
+              className={`flex items-center justify-center overflow-hidden rounded-full shadow-2xl dark:${color.darkBase} dark:hover:${color.primaryHover}`}
+            >
+              <CircularProgress
+                barColor={`${color.textPrimary}`}
+                className="p-1.5"
+              />
               <span className="absolute text-sm font-semibold text-center rotate-12">
                 {t("about.progress.FE")}
               </span>
             </div>
-            <div className="flex items-center justify-center overflow-hidden rounded-full shadow-2xl">
-              <CircularProgress barColor="text-indigo-400" className="p-1.5" />
+            <div
+              className={`flex items-center justify-center overflow-hidden rounded-full shadow-2xl dark:${color.darkBase} dark:hover:${color.primaryHover}`}
+            >
+              <CircularProgress
+                barColor={`${color.textSubSecondary}`}
+                className="p-1.5"
+              />
               <span className="absolute text-sm font-semibold text-center rotate-12">
                 {t("about.progress.BE")}
               </span>
             </div>
-            <div className="flex items-center justify-center overflow-hidden rounded-full shadow-2xl">
-              <CircularProgress barColor="text-slate-400" className="p-1.5" />
+            <div
+              className={`flex items-center justify-center overflow-hidden rounded-full shadow-2xl dark:${color.darkBase} dark:hover:${color.primaryHover}`}
+            >
+              <CircularProgress
+                barColor={`${color.textSubPrimary}`}
+                className="p-1.5"
+              />
               <span className="absolute text-sm font-semibold text-center rotate-12">
                 {t("about.progress.UI")}
               </span>

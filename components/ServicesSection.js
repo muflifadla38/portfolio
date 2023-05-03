@@ -8,7 +8,7 @@ import {
   HiRocketLaunch,
 } from "react-icons/hi2";
 
-const ServicesSection = ({ slideMode = true }) => {
+const ServicesSection = ({ slideMode = true, color }) => {
   const { t } = useTranslation();
   const services = t("services.list", { returnObjects: true });
 
@@ -36,17 +36,24 @@ const ServicesSection = ({ slideMode = true }) => {
             return (
               <div
                 key={index}
-                className="max-w-xs p-6 bg-white border border-slate-50 rounded-lg shadow-md dark:bg-slate-800 dark:border-slate-700 text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300"
+                className={`max-w-xs p-6 ${color.white} border  rounded-lg shadow-md dark:${color.darkBase} dark:hover:${color.primaryHover}
+                dark:border-transparent text-center hover:shadow-2xl transition-all ease-in delay-0 duration-300`}
               >
                 <div className="flex justify-center mb-4">
-                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-b hover:bg-gradient-to-tl from-slate-500 to-indigo-600 text-slate-100">
+                  <div
+                    className={`flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-b hover:bg-gradient-to-tl ${color.gradientFrom} ${color.gradientTo} ${color.textLight}`}
+                  >
                     <Icon className="w-10 h-10" />
                   </div>
                 </div>
-                <h5 className="mb-2 text-lg font-semibold tracking-tight text-slate-900 dark:text-white uppercase">
+                <h5
+                  className={`mb-2 text-lg font-semibold tracking-tight ${color.textBase} dark:${color.textLight} uppercase`}
+                >
                   {service.title}
                 </h5>
-                <p className="mb-3 text-sm font-normal text-slate-500 dark:text-slate-400">
+                <p
+                  className={`mb-3 text-sm font-normal ${color.textPrimary} dark:${color.textSubPrimary}`}
+                >
                   {service.description}
                 </p>
               </div>
